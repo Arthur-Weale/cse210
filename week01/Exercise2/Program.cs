@@ -6,28 +6,28 @@ class Program
     {
         Console.WriteLine("What is your grade percentage?");
         string grade = Console.ReadLine();
-        int intGrade = int.Parse(grade); 
+        int intGrade = int.Parse(grade); //Change the grade from string to integer
 
-        string letter = "";
+        string letter = ""; //Re-initialises a varible that takes in a string
         if (intGrade >= 90)
             {
-                letter = "A";
+                letter = "A"; //Assigns a letter grade to letter
             }
         else if (intGrade >= 80)
             {
-                letter = "B";
+                letter = "B"; //Assigns a letter grade to letter
             }
         else if (intGrade >= 70)
             {
-                letter = "C";
+                letter = "C"; //Assigns a letter grade to letter
             }
         else if (intGrade >= 60)
             {
-                letter = "D";
+                letter = "D"; //Assigns a letter grade to letter
             }
         else
             {
-                letter = "F";
+                letter = "F"; //Assigns a letter grade to letter
             }
 
         Console.WriteLine($"Your grade is {letter}.");
