@@ -16,7 +16,7 @@ class Program
     }
 
     static string PromptUserName ()
-    {
+    {  
         Console.Write("Please enter your name: ");
         string userName = Console.ReadLine();
         return userName;
