@@ -19,7 +19,7 @@ public class Order
 
     public double GetShippingCost()
 {
-    if (_customer.IsInUSA()) // Assuming _customer is the Customer object associated with this order
+    if (_customer.IsInUSA()) 
     {
         return 5.0; // Shipping cost for USA
     }
