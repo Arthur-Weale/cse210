@@ -7,7 +7,7 @@ class Program
         
         
         int userInputInt ;
-        int durationTime;
+        // int durationTime;
 
         do{
             Console.WriteLine("Menu Options");
@@ -18,16 +18,19 @@ class Program
             Console.Write("Select a choice from the Menu: ");
             string userInput = Console.ReadLine();
             userInputInt = int.Parse(userInput);
-            
+            Console.Clear();
 
             if (userInputInt == 1)
             {
-                Activity activity = new Activity("Breathing", "help you relax by walking your breathing in and out slowly. Clear your mind and focus your breathing");
-                activity.DisplayStartMessage();
-                string duration = Console.ReadLine();
-                durationTime = int.Parse(duration);
+                // Activity activity = new Activity("Breathing", "help you relax by walking your breathing in and out slowly. Clear your mind and focus your breathing");
+                // activity.DisplayStartMessage();
+                // string duration = Console.ReadLine();
+                // durationTime = int.Parse(duration);
 
-                activity.SetDuration(durationTime);
+                BreathingActivity breathingActivity = new BreathingActivity();
+                breathingActivity.DisplayStartMessage();
+                Console.Clear();
+                breathingActivity.Run();
             }
         }
         while(userInputInt != 4);
