@@ -11,6 +11,7 @@ public class BreathingActivity : Activity
         Console.WriteLine("Get Ready......");
         ShowSpinner();
         Console.WriteLine();
+        //DurationCountdownTimer();
         Console.WriteLine();
         DateTime startTimeCount = DateTime.Now;
         DateTime newCountTime = startTimeCount.AddSeconds(_duration);

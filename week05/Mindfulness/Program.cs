@@ -22,15 +22,24 @@ class Program
 
             if (userInputInt == 1)
             {
-                // Activity activity = new Activity("Breathing", "help you relax by walking your breathing in and out slowly. Clear your mind and focus your breathing");
-                // activity.DisplayStartMessage();
-                // string duration = Console.ReadLine();
-                // durationTime = int.Parse(duration);
-
                 BreathingActivity breathingActivity = new BreathingActivity();
                 breathingActivity.DisplayStartMessage();
                 Console.Clear();
                 breathingActivity.Run();
+            }
+            else if(userInputInt == 2)
+            {
+                ReflectingActivity reflectingActivity = new ReflectingActivity();
+                reflectingActivity.DisplayStartMessage();
+                Console.Clear();
+                reflectingActivity.Run();
+            }
+
+            else if(userInputInt == 3)
+            {
+                ListingActivity listingActivity = new ListingActivity();
+                listingActivity.DisplayStartMessage();
+                listingActivity.Run();
             }
         }
         while(userInputInt != 4);

@@ -21,6 +21,7 @@ public class ListingActivity : Activity
         Console.WriteLine("Get Ready......");
         ShowSpinner();
         Console.WriteLine();
+        //DurationCountdownTimer();
         Console.WriteLine();
         Console.WriteLine("List as many responses as you can to the following prompts: ");
         GetRandomPrompt();
