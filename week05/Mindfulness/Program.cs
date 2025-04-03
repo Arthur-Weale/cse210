@@ -4,7 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        //Exceeding Requirements:
+        //I added inspirational quotes that will give the user an interest to use the program more often by giving them inspirational quotes.
         
         int userInputInt ;
         // int durationTime;
